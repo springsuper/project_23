@@ -1,0 +1,598 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Dec 22 18:14:20 2024
+# Process ID: 20064
+# Current directory: D:/MyCPU/project_23/project_23.runs/synth_1
+# Command line: vivado.exe -log soc_lite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
+# Log file: D:/MyCPU/project_23/project_23.runs/synth_1/soc_lite_top.vds
+# Journal file: D:/MyCPU/project_23/project_23.runs/synth_1\vivado.jou
+# Running On: LAPTOP-K4AAENU9, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+source soc_lite_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1469.332 ; gain = 162.754
+Command: synth_design -top soc_lite_top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9096
+CRITICAL WARNING: [Synth 8-9339] data object 'op_div' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:120]
+INFO: [Synth 8-6826] previous declaration of 'op_div' is from here [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:27]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'op_div' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:120]
+CRITICAL WARNING: [Synth 8-9339] data object 'op_divu' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:121]
+INFO: [Synth 8-6826] previous declaration of 'op_divu' is from here [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:28]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'op_divu' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:121]
+CRITICAL WARNING: [Synth 8-9339] data object 'op_mod' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:122]
+INFO: [Synth 8-6826] previous declaration of 'op_mod' is from here [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:29]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'op_mod' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:122]
+CRITICAL WARNING: [Synth 8-9339] data object 'op_modu' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:123]
+INFO: [Synth 8-6826] previous declaration of 'op_modu' is from here [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:30]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'op_modu' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:123]
+WARNING: [Synth 8-6901] identifier 'write_idle' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:99]
+WARNING: [Synth 8-6901] identifier 'write_idle' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:130]
+WARNING: [Synth 8-6901] identifier 'write_idle' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:139]
+INFO: [Synth 8-11241] undeclared symbol 'da_hit', assumed default net type 'wire' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:436]
+WARNING: [Synth 8-6901] identifier 'invop' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:64]
+WARNING: [Synth 8-6901] identifier 'dmw0_hit' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:78]
+WARNING: [Synth 8-6901] identifier 'dmw1_hit' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:78]
+WARNING: [Synth 8-6901] identifier 'es_mem_ex' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:281]
+INFO: [Synth 8-11241] undeclared symbol 'load_block', assumed default net type 'wire' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/id_stage.v:500]
+INFO: [Synth 8-11241] undeclared symbol 'dst_is_rj', assumed default net type 'wire' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/id_stage.v:657]
+INFO: [Synth 8-11241] undeclared symbol 'da_hit', assumed default net type 'wire' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:309]
+WARNING: [Synth 8-6901] identifier 'dmw0_hit' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:104]
+WARNING: [Synth 8-6901] identifier 'dmw1_hit' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:104]
+WARNING: [Synth 8-6901] identifier 'fs_inst_buf_valid' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:136]
+WARNING: [Synth 8-6901] identifier 'fs_abandon' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:136]
+WARNING: [Synth 8-6901] identifier 'br_taken_buf' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:148]
+WARNING: [Synth 8-6901] identifier 'ex_buf_valid' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:148]
+WARNING: [Synth 8-6901] identifier 'nextpc_buf' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:148]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'ms_ertn_flush' is not allowed [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mem_stage.v:91]
+WARNING: [Synth 8-6901] identifier 'data_sram_rdata_buf_valid' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mem_stage.v:102]
+INFO: [Synth 8-11241] undeclared symbol 'inst_tlbwr', assumed default net type 'wire' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regcsr.v:78]
+WARNING: [Synth 8-10714] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regcsr.v:698]
+CRITICAL WARNING: [Synth 8-9339] data object 'ws_tlb_refetch' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/wb_stage.v:61]
+INFO: [Synth 8-6826] previous declaration of 'ws_tlb_refetch' is from here [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/wb_stage.v:45]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'ws_tlb_refetch' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/wb_stage.v:61]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.168 ; gain = 409.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_lite_top' [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:67]
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (0#1) [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/clk_pll_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'axi_bridge' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'axi_bridge' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:1]
+WARNING: [Synth 8-7071] port 'rlast' of module 'axi_bridge' is unconnected for instance 'axi_bridge' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mycpu_top.v:80]
+WARNING: [Synth 8-7023] instance 'axi_bridge' of module 'axi_bridge' has 56 connections declared, but only 55 given [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mycpu_top.v:80]
+INFO: [Synth 8-6157] synthesizing module 'cpu_core' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/cpu_core.v:2]
+INFO: [Synth 8-6157] synthesizing module 'if_stage' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'if_stage' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id_stage' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/id_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder_6_64' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_6_64' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:41]
+INFO: [Synth 8-6157] synthesizing module 'decoder_4_16' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_4_16' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:15]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2_4' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2_4' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:2]
+INFO: [Synth 8-6157] synthesizing module 'decoder_5_32' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_5_32' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v:28]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'id_stage' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/id_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'exe_stage' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mydiv' [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/mydiv_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mydiv' (0#1) [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/mydiv_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'my_unsigned_div' [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/my_unsigned_div_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'my_unsigned_div' (0#1) [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/my_unsigned_div_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'exe_stage' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_stage' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mem_stage.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mem_stage' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mem_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'wb_stage' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/wb_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regcsr' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regcsr.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regcsr' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regcsr.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'wb_stage' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/wb_stage.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tlb' [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tlb.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'tlb' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tlb.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_core' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/cpu_core.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mycpu_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (0#1) [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:36]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (0#1) [D:/MyCPU/project_23/project_23.runs/synth_1/.Xil/Vivado-20064-LAPTOP-K4AAENU9/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:36]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v:74]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lite_top' (0#1) [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v:67]
+WARNING: [Synth 8-6014] Unused sequential element pf_r2r_reg was removed.  [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:106]
+WARNING: [Synth 8-6014] Unused sequential element pf_b2b_reg was removed.  [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:107]
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v:193]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v:194]
+WARNING: [Synth 8-7129] Port arlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[7] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[6] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[5] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[4] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlen[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awsize[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awburst[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awlock[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awcache[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wid[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module confreg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[3] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[2] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[1] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wid[0] in module axi_wrap_ram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port back_ex in module mem_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port back_ex in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s1_mat[1] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s1_mat[0] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[159] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[158] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[157] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[156] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[155] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[154] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[153] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[152] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[151] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[150] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[149] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[148] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[147] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[146] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[145] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[144] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[143] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[142] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[141] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[140] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[139] in module exe_stage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ws_to_es_bus[138] in module exe_stage is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2449.098 ; gain = 555.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2467.020 ; gain = 572.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2467.020 ; gain = 572.926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 2467.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/MyCPU/project_23/project_23.gen/sources_1/ip/mydiv/mydiv/mydiv_in_context.xdc] for cell 'u_cpu/cpu_core/exe_stage/u_alu/mydiv'
+Finished Parsing XDC File [d:/MyCPU/project_23/project_23.gen/sources_1/ip/mydiv/mydiv/mydiv_in_context.xdc] for cell 'u_cpu/cpu_core/exe_stage/u_alu/mydiv'
+Parsing XDC File [d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Finished Parsing XDC File [d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Parsing XDC File [d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Finished Parsing XDC File [d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Parsing XDC File [d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Finished Parsing XDC File [d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Parsing XDC File [d:/MyCPU/project_23/project_23.gen/sources_1/ip/my_unsigned_div/my_unsigned_div/my_unsigned_div_in_context.xdc] for cell 'u_cpu/cpu_core/exe_stage/u_alu/my_unsigned_div'
+Finished Parsing XDC File [d:/MyCPU/project_23/project_23.gen/sources_1/ip/my_unsigned_div/my_unsigned_div/my_unsigned_div_in_context.xdc] for cell 'u_cpu/cpu_core/exe_stage/u_alu/my_unsigned_div'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2579.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2579.703 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_crossbar_1x2' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_cpu/cpu_core/exe_stage/u_alu/my_unsigned_div' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_cpu/cpu_core/exe_stage/u_alu/mydiv' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2579.703 ; gain = 685.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2579.703 ; gain = 685.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for u_cpu/cpu_core/exe_stage/u_alu/mydiv. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for \pll.clk_pll . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_axi_ram/ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_axi_crossbar_1x2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_cpu/cpu_core/exe_stage/u_alu/my_unsigned_div. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2579.703 ; gain = 685.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'axi_bridge'
+INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg' in module 'axi_bridge'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              WRITE_IDLE |                             0001 |                             0001
+             WRITE_WADDR |                             0010 |                             0010
+             WRITE_WDATA |                             0100 |                             0100
+             WRITE_BRESP |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'write_state_reg' in module 'axi_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               READ_IDLE |                              001 |                              001
+              READ_RADDR |                              010 |                              010
+              READ_RDATA |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'read_state_reg' in module 'axi_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                              000
+                  iSTATE |                           100000 |                              001
+                 iSTATE0 |                           010000 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           000100 |                              100
+                 iSTATE3 |                           000010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 2579.703 ; gain = 685.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 12    
++---Registers : 
+	              269 Bit    Registers := 1     
+	              211 Bit    Registers := 1     
+	              199 Bit    Registers := 1     
+	               74 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 32    
+	               30 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               20 Bit    Registers := 32    
+	               19 Bit    Registers := 17    
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 17    
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 75    
+	                1 Bit    Registers := 176   
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 2     
+	   3 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 47    
+	   3 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   3 Input   23 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   19 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 14    
+	   5 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	   5 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 8     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 13    
+	   4 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 19    
+	   2 Input    1 Bit        Muxes := 84    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_result, operation Mode is: A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: Generating DSP mul_result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: Generating DSP mul_result, operation Mode is: A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: Generating DSP mul_result, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+DSP Report: operator mul_result is absorbed into DSP mul_result.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 2579.703 ; gain = 685.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------------+------------------+-----------+----------------------+--------------+
+|Module Name               | RTL Object       | Inference | Size (Depth x Width) | Primitives   | 
++--------------------------+------------------+-----------+----------------------+--------------+
+|\u_cpu/cpu_core /id_stage | u_regfile/rf_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------------------+------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 2579.703 ; gain = 685.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:06 . Memory (MB): peak = 2810.699 ; gain = 916.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------------+------------------+-----------+----------------------+--------------+
+|Module Name               | RTL Object       | Inference | Size (Depth x Width) | Primitives   | 
++--------------------------+------------------+-----------+----------------------+--------------+
+|\u_cpu/cpu_core /id_stage | u_regfile/rf_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------------------+------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:09 . Memory (MB): peak = 2877.621 ; gain = 983.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:12 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:12 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B          | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 30     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | PCIN>>17+A*B | 17     | 18     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_pll          |         1|
+|2     |axi_crossbar_1x2 |         1|
+|3     |axi_ram          |         1|
+|4     |mydiv            |         1|
+|5     |my_unsigned_div  |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |axi_crossbar_1x2 |     1|
+|2     |axi_ram          |     1|
+|3     |clk_pll          |     1|
+|4     |my_unsigned_div  |     1|
+|5     |mydiv            |     1|
+|6     |CARRY4           |   205|
+|7     |DSP48E1          |     4|
+|8     |LUT1             |    61|
+|9     |LUT2             |   245|
+|10    |LUT3             |   691|
+|11    |LUT4             |   462|
+|12    |LUT5             |   706|
+|13    |LUT6             |  2498|
+|14    |MUXF7            |   360|
+|15    |MUXF8            |   101|
+|16    |RAM32M           |    10|
+|17    |RAM32X1D         |     4|
+|18    |FDRE             |  3459|
+|19    |FDSE             |   129|
+|20    |IBUF             |    15|
+|21    |OBUF             |    71|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 2889.379 ; gain = 995.285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 617 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:11 . Memory (MB): peak = 2889.379 ; gain = 882.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 2889.379 ; gain = 995.285
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 2901.438 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 684 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2905.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: f976ef21
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 127 Warnings, 10 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:19 . Memory (MB): peak = 2905.082 ; gain = 1402.977
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/MyCPU/project_23/project_23.runs/synth_1/soc_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 22 18:15:50 2024...

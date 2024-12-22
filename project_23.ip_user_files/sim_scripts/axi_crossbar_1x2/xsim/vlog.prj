@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../ipstatic/hdl" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,63 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_pll
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_crossbar_1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_bridge
+WARNING: [VRFC 10-3248] data object 'write_idle' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:206]
+WARNING: [VRFC 10-9364] second declaration of 'write_idle' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:206]
+WARNING: [VRFC 10-3248] data object 'write_waddr' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:207]
+WARNING: [VRFC 10-9364] second declaration of 'write_waddr' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:207]
+WARNING: [VRFC 10-3248] data object 'write_wdata' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:208]
+WARNING: [VRFC 10-9364] second declaration of 'write_wdata' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:208]
+WARNING: [VRFC 10-3248] data object 'write_bresp' is already declared [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:209]
+WARNING: [VRFC 10-9364] second declaration of 'write_bresp' is ignored [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/axi_bridge.v:209]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/cpu_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+WARNING: [VRFC 10-3380] identifier 'invop' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:64]
+WARNING: [VRFC 10-3380] identifier 'dmw1_hit' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:79]
+WARNING: [VRFC 10-3380] identifier 'es_mem_ex' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/exe_stage.v:281]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+WARNING: [VRFC 10-3380] identifier 'dmw0_hit' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:104]
+WARNING: [VRFC 10-3380] identifier 'fs_inst_buf_valid' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:136]
+WARNING: [VRFC 10-3380] identifier 'br_taken_buf' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/if_stage.v:148]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+WARNING: [VRFC 10-3380] identifier 'data_sram_rdata_buf_valid' is used before its declaration [D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mem_stage.v:102]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mycpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regcsr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regcsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_lite_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tlb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tlb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/tools.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_2_4
+INFO: [VRFC 10-311] analyzing module decoder_4_16
+INFO: [VRFC 10-311] analyzing module decoder_5_32
+INFO: [VRFC 10-311] analyzing module decoder_6_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/myCPU/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/testbench/mycpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/MyCPU/exp23/exp23/mycpu_env/soc_verify/soc_axi/testbench/mycpu_tb.v:234]

@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../exp23/exp23/mycpu_env/myCPU" --include "../../../../../exp23/exp23/mycpu_env/func/include" --include "../../../../project_23.ip_user_files/ipstatic" --include "../../../../project_23.ip_user_files/ipstatic/hdl" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/sim/axi_ram.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/sim/axi_crossbar_1x2.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/alu.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/axi_bridge.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/CONFREG/confreg.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/cpu_core.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/exe_stage.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/id_stage.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/if_stage.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/mem_stage.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/mycpu_top.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/regcsr.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/regfile.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/rtl/soc_lite_top.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/tlb.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/tools.v" \
+"../../../../../exp23/exp23/mycpu_env/myCPU/wb_stage.v" \
+"../../../../../exp23/exp23/mycpu_env/soc_verify/soc_axi/testbench/mycpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

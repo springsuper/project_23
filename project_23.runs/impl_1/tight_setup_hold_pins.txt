@@ -1,0 +1,28 @@
++====================+===================+======================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                  |
++====================+===================+======================================================================================================================================+
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_valid_i_reg_inv/D                                    |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_target_hot_i_reg[2]/D                                |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/axi_bridge/read_state_reg[1]/D                                                                                                 |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/ex_buf_valid_reg/D                                                                                           |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/axi_bridge/reading_inst_ram_reg/D                                                                                              |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/id_stage/ds_valid_reg/D                                                                                               |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/id_stage/fs_to_ds_bus_r_reg[52]/D                                                                                     |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_target_hot_i_reg[1]/D                                |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_valid_i_reg_inv/D                                    |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_reg[1]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_axi_crossbar_1x2/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/storage_data1_reg[0]/D |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/axi_bridge/write_state_reg[0]/D                                                                                                |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/axi_bridge/write_state_reg[1]/D                                                                                                |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/axi_bridge/reading_data_ram_reg/D                                                                                              |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/mem_stage/ms_abandon_reg/D                                                                                            |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/mem_stage/ms_valid_reg/D                                                                                              |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[4]/D                                                                                          |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[8]/D                                                                                          |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[2]/D                                                                                          |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[3]/D                                                                                          |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[5]/D                                                                                          |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[0]/D                                                                                          |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[30]/D                                                                                         |
+| cpu_clk_clk_pll    | cpu_clk_clk_pll   | u_cpu/cpu_core/if_stage/nextpc_buf_reg[29]/D                                                                                         |
++--------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------+
